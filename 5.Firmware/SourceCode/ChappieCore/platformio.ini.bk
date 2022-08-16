@@ -1,0 +1,47 @@
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+; Reference:
+; hhttps://docs.platformio.org/en/latest/platforms/espressif32.html
+
+[env:esp32s3box]
+platform = espressif32
+board = esp32s3box
+framework = arduino
+
+; Serial Monitor options
+monitor_speed = 115200
+
+; CPU frequency
+board_build.f_cpu = 240000000L
+
+; Flash
+board_build.flash_mode = qio
+; board_build.f_flash = 80000000L
+
+;  File system
+; board_build.filesystem = SPIFFS
+; board_build.filesystem = littlefs
+
+build_flags = 
+    ; USB CDC
+	-DARDUINO_USB_CDC_ON_BOOT=1
+	-DARDUINO_USB_MODE=1
+
+    ; PSRAM
+	-DBOARD_HAS_PSRAM
+	-mfix-esp32-psram-cache-issue
+
+    ; DEBUG level
+    -DCORE_DEBUG_LEVEL=6
+
+    ; Partition Table
+    ; board_build.partitions = partitions_custom.csv
+

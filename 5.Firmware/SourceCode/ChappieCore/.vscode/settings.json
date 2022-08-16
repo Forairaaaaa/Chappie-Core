@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp",
+        "fstream": "cpp",
+        "thread": "cpp",
+        "lv_port_fs.h": "c",
+        "fs.h": "c",
+        "ff.h": "c",
+        "atomic": "cpp",
+        "sstream": "cpp",
+        "lvgl.h": "c",
+        "sd_init.hpp": "c",
+        "esp32-hal.h": "c",
+        "soc_caps.h": "c",
+        "ledc.h": "c",
+        "ui.h": "c"
+    }
+}
