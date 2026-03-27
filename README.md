@@ -5,4 +5,4 @@ Core board based on ESP32-S3
 
 视频介绍：https://www.bilibili.com/video/BV1dS4y1p7am
 
-立创开源平台链接：https://oshwhub.com/eedadada/chappie_oshw
+立创开源平台链接：https://oshwhub.com/eda_rgprdhwej/chappie_oshw
